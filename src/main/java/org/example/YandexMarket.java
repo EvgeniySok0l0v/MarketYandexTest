@@ -209,7 +209,8 @@ public class YandexMarket {
 
         Thread.sleep(SEVEN_SEC);
         //loop for add hrefs
-        for(int i = 1; i <= 3; i++){
+        // for test i use 3 steps
+        for(int i = 1; i <= numberOfHrefs; i++){
             String href = driver.findElement(By.xpath(
                     "//div[@data-index='" + i + "']//a")).getAttribute("href");
             hrefs.add(href);
